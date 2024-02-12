@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% load static %}
+
+  <head>
+    <title>form</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <style type="text/css">
+      @import url("https://fonts.googleapis.com/css2?family=Laila:wght@500&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Laila:wght@500&display=swap");
+      @import url("https://fonts.cdnfonts.com/css/olde-english");
+      @import url("https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Laila:wght@500&family=Poppins&display=swap");
+
+      .image-container {
+        position: relative;
+        display: inline-block;
+        width: 300px;
+        height: 400px;
+        overflow: hidden;
+        /* To hide the overflow when masking */
+      }
+
+      .image-container img {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        object-fit: cover;
+        /* Ensure the image fills the container */
+      }
+
+      .image-container {
+        position: relative;
+        display: inline-block;
+      }
+
+      .gradient-overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 15%;
+        /* Adjust to 25% of the image's height */
+        background: linear-gradient(
+          to bottom,
+          #ffeede,
+          #ffeede
+        );
+      }
+
+      .container {
+        color: rgb(0, 0, 0);
+      }
+
+      /* form {
+            border: ridge 1.5px rgb(255, 255, 255);
+            padding: 20px;
+        } */
+
+      body {
+        background-color: #ffeede;
+        /* fallback for old browsers */
+      }
+
+      .title1 {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 11px;
+      }
+
+      .title3 {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 11px;
+      }
+
+      .title2 {
+        font-size: 23px;
+        font-weight: 700;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container-fluid px-lg-5 px-3 mt-0 mb-5">
+      <div class="d-flex justify-content-between mx-4">
+        <div class="image-container">
+          <img
+            src="{% static 'Sagar Dolttade Profile Photo.png' %}"
+            alt="Sagar Dolttade Profile Photo"
+          />
+          <div class="position-absolute" style="bottom: 0; z-index: 1;left: 10px;">
+            <p
+              class="mb-0 text-danger title3 mb-2 text-center"
+              style="font-family: 'Poppins', sans-serif"
+            >
+              मा.श्री. सागर (भैय्या) मारुती दोलत्तडे
+            </p>
+            <p
+              class="mb-0 text-dark fs-3 text-center"
+              style="font-family: 'Poppins', sans-serif; font-weight: 700"
+            >
+              राष्ट्रीय अध्यक्ष
+            </p>
+          </div>
+          <div class="gradient-overlay"></div>
+        </div>
+        <div class="text-center">
+          <img
+            src="{% static 'Vishesh Samaj Kalyan Logo.png' %}"
+            height="240px"
+            alt=""
+          />
+          <p
+            class="mb-0 text-danger title1"
+            style="font-family: 'Poppins', sans-serif"
+          >
+            विशेष समाज कल्याण परिषद
+          </p>
+          <p
+            class="mb-2 text-danger fs-5 title2"
+            style="font-family: 'Old English Text MT', serif"
+          >
+            Ad Hoc Social Welfare Council
+          </p>
+          <p
+            class="mb-2"
+            style="
+              color: #eea010;
+              font-weight: 600;
+              font-family: 'Poppins', sans-serif;
+            "
+          >
+            ।। सा श्री: वः अव्यात् ।।
+          </p>
+          <p
+            class="mb-0 text-dark fs-3"
+            style="font-family: 'Poppins', sans-serif; font-weight: 700"
+          >
+            नागरी सामाजिक संघटन
+          </p>
+          <p
+            class="mb-0 text-dark fs-3"
+            style="
+              font-family: 'Poppins', sans-serif;
+              font-weight: 700;
+              text-transform: uppercase;
+            "
+          >
+            civil society organizations (cso)
+          </p>
+          <p
+            class="mb-0 text-secondary fs-3"
+            style="
+              font-family: 'Poppins', sans-serif;
+              font-weight: 700;
+              text-transform: uppercase;
+            "
+          >
+            niti ayog uid mh/2023/0350972
+          </p>
+        </div>
+        <div class="image-container">
+          <img
+            src="{% static 'Nitin Mane Profile Photo.png' %}"
+            alt="Nitin Mane Profile Photo"
+          />
+          <div
+            class="position-absolute"
+            style="bottom: 0; z-index: 1; left: 40px"
+          >
+            <p
+              class="mb-0 text-danger title3 mb-2 text-center"
+              style="font-family: 'Poppins', sans-serif"
+            >
+              मा.श्री.नितीनजी अशोक माने
+            </p>
+            <p
+              class="mb-0 text-dark fs-3 text-center"
+              style="font-family: 'Poppins', sans-serif; font-weight: 700"
+            >
+              राष्ट्रीय उपाध्यक्ष
+            </p>
+          </div>
+          <div class="gradient-overlay"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-11 mt-4 mx-auto">
+          <h4
+            class="text-center mt-5 mb-3"
+            style="
+              font-size: 28px;
+              font-weight: 600;
+              font-family: 'Poppins', sans-serif;
+            "
+          >
+            सभासद नोंदणी फॉर्म
+          </h4>
+          <form action="{% url 'home' %}" method="post" id="myForm">
+            {% csrf_token %}
+            <div class="row">
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label for="name">आदरसूचक</label>
+                  <select class="form-control" id="name" name="salutation">
+                    <option disabled selected>निवडा</option>
+                    <option value="श्री">श्री</option>
+                    <option value="श्रीमती">श्रीमती</option>
+                    <option value="कु">कुमार</option>
+                    <option value="कु">कुमारी</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label for="first_name">पहिले नाव</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="first_name"
+                    name="first_name"
+                  />
+                  <span id="first_name_error" class="text-danger"></span>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label for="middle_name">मधले नाव</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="middle_name"
+                    name="middle_name"
+                  />
+                  <span id="middle_name_error" class="text-danger"></span>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label for="last_name">आडनाव</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="last_name"
+                    name="last_name"
+                  />
+                  <span id="last_name_error" class="text-danger"></span>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label for="address">पत्ता </label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="address"
+                    name="address"
+                  />
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label for="taluka">तालुका</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="taluka"
+                    name="taluka"
+                  />
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label for="district">जिल्हा</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="district"
+                    name="district"
+                  />
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label for="postal_code">पिनकोड</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="postal_code"
+                    name="postal_code"
+                  />
+                  <span id="postal_code_error" class="text-danger"></span>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label for="age">वय</label>
+                  <input type="text" class="form-control" id="age" name="age" />
+                  <span id="age_error" class="text-danger"></span>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label for="contact">संपर्क</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="contact"
+                    name="contact"
+                  />
+                  <span id="contact_error" class="text-danger"></span>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label for="whatsapp_no">व्हॅट्सऍप</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="whatsapp_no"
+                    name="whatsapp_no"
+                  />
+                  <span id="whatsapp_no_error" class="text-danger"></span>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="num_family_members">कुटुंब सदस्य संख्या</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="num_family_members"
+                    name="num_family_members"
+                  />
+                  <span
+                    id="num_family_members_error"
+                    class="text-danger"
+                  ></span>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="aadhar_no">आधार क्रमांक</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="aadhar_no"
+                    name="aadhar_no"
+                  />
+                  <span id="aadhar_no_error" class="text-danger"></span>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label for="sabhasad_varg">सदस्य वर्ग:</label>
+                  <select
+                    class="form-control"
+                    id="sabhasad_varg"
+                    name="Type_of_members"
+                  >
+                    <option disabled selected>निवडा</option>
+                    <option value="सर्वसाधारण सभासद">सर्वसाधारण सभासद</option>
+                    <option value="विशेष सभासद">विशेष सभासद</option>
+                    <option value="पदधारक सभासद">पदधारक सभासद</option>
+                    <option value="पदवीधर सभासद">पदवीधर सभासद</option>
+                    <option value="जिल्हा कार्यकारणी सभासद">
+                      जिल्हा कार्यकारणी सभासद
+                    </option>
+                    <option value="तालुका कार्यकारिणी सभासद">
+                      तालुका कार्यकारिणी सभासद
+                    </option>
+                    <option value="ग्रामविकास कार्यकारिणी सभासद">
+                      ग्रामविकास कार्यकारिणी सभासद
+                    </option>
+                    <option value="राज्य कार्यकारिणी सभासद">
+                      राज्य कार्यकारिणी सभासद
+                    </option>
+                    <option value="राष्ट्रीय कार्यकारिणी सभासद">
+                      राष्ट्रीय कार्यकारिणी सभासद
+                    </option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <button
+              type="submit"
+              class="btn btn-success w-100 my-2"
+              name="create"
+            >
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Add any JavaScript files or CDN links -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        document
+          .getElementById("myForm")
+          .addEventListener("submit", function (event) {
+            const firstName = document
+              .getElementById("first_name")
+              .value.trim();
+            const lastName = document.getElementById("last_name").value.trim();
+            const pincode = document.getElementById("postal_code").value.trim();
+            const age = document.getElementById("age").value.trim();
+            const contact = document.getElementById("contact").value.trim();
+            const whatsapp = document
+              .getElementById("whatsapp_no")
+              .value.trim();
+            const familyMembers = document
+              .getElementById("num_family_members")
+              .value.trim();
+            const aadharNo = document.getElementById("aadhar_no").value.trim();
+
+            // Reset error messages
+            document.getElementById("first_name_error").textContent = "";
+            document.getElementById("last_name_error").textContent = "";
+            document.getElementById("postal_code_error").textContent = "";
+            document.getElementById("age_error").textContent = "";
+            document.getElementById("contact_error").textContent = "";
+            document.getElementById("whatsapp_no_error").textContent = "";
+            document.getElementById("num_family_members_error").textContent =
+              "";
+            document.getElementById("aadhar_no_error").textContent = "";
+
+            // First Name validation
+            if (firstName === "") {
+              document.getElementById("first_name_error").textContent =
+                "Please enter your first name.";
+              event.preventDefault();
+              return;
+            }
+
+            // Last Name validation
+            if (lastName === "") {
+              document.getElementById("last_name_error").textContent =
+                "Please enter your last name.";
+              event.preventDefault();
+              return;
+            }
+
+            // PINCODE validation
+            if (!/^\d{6}$/.test(pincode)) {
+              document.getElementById("postal_code_error").textContent =
+                "Please enter a valid 6-digit PINCODE.";
+              event.preventDefault();
+              return;
+            }
+
+            // Age validation
+            if (!/^\d{1,2}$/.test(age) || parseInt(age) < 18) {
+              document.getElementById("age_error").textContent =
+                "Please enter a valid age (minimum 18 years).";
+              event.preventDefault();
+              return;
+            }
+
+            // Contact validation
+            if (!/^\d{10}$/.test(contact)) {
+              document.getElementById("contact_error").textContent =
+                "Please enter a valid 10-digit contact number.";
+              event.preventDefault();
+              return;
+            }
+
+            // WhatsApp validation
+            if (!/^\d{10}$/.test(whatsapp)) {
+              document.getElementById("whatsapp_no_error").textContent =
+                "Please enter a valid 10-digit WhatsApp number.";
+              event.preventDefault();
+              return;
+            }
+
+            // No. of Family validation
+            if (!/^\d{1,3}$/.test(familyMembers)) {
+              document.getElementById("num_family_members_error").textContent =
+                "Please enter a valid number of family members (up to 3 digits).";
+              event.preventDefault();
+              return;
+            }
+
+            // Aadhar Number validation
+            if (!/^\d{12}$/.test(aadharNo)) {
+              document.getElementById("aadhar_no_error").textContent =
+                "Please enter a valid 12-digit Aadhar number.";
+              event.preventDefault();
+              return;
+            }
+
+            // Other validations...
+          });
+      });
+    </script>
+  </body>
+</html>
