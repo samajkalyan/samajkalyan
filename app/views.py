@@ -27,6 +27,13 @@ def home(request):
         unique_id = uuid.uuid4().hex[:6].upper()
         serial_no = FormData.objects.count() + 1
 
+
+        if FormData.objects.filter(contact=contact).exists():
+            messages.warning(request,'This contact has already been registered')
+            return redirect('home')
+        if FormData.objects.filter(aadhar_no=aadhar_no).exists():
+            messages.warning(request,'This Aadhar number has already been registered')
+            return redirect('home')
         # Save data to the database
         profile = FormData.objects.create(
             unique_id=unique_id,

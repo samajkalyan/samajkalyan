@@ -64,6 +64,21 @@
                             style="font-size: 20px;line-height: 55px;font-weight: 700;color: #4f4c4c;"><span
                                 id="formattedDate">{{ p.date }}</span>{{ p.serial_no| stringformat:"04d" }}</p>
                     </div>
+                    <div style="position: absolute;
+                    bottom: 7%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    text-align: center;
+                    z-index: 1;
+                    color: #030303;
+                    font-weight: 600;
+                    width: 100%;">
+                        <p class="mb-0 uniqueid"
+                        style="font-size: 12px;font-weight: 600;color: #323131;text-transform: uppercase;">
+                        This card is issued on {{ p.date|date:"d-m-Y" }} and valid till [to 3 years]
+                     </p>
+                     
+                    </div>
                 </div>
             </div>
         </div>
