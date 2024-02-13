@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-    {% load static %}
 <head>
     <link
     rel="stylesheet"
@@ -22,7 +21,11 @@
                     <p>हमारी टीम जल्द ही आपके पंजीकरण की समीक्षा करेगी। एक बार स्वीकृत होने पर,
                         आपको हमारे संगठन से एक मुद्रित आईडी कार्ड प्राप्त होगा।</p>
                     <p>कृपया नीचे दिए गए क्यूआर कोड को स्कैन करके सदस्यता शुल्क का भुगतान करने के लिए आगे बढ़ें।</p>
+<<<<<<< HEAD
                     <img src="{% static 'QRCode.jpg' %}" width="200px" alt="">
+=======
+                    <img src="../static/QR Code for Payment.jpg" width="200px" alt="">
+>>>>>>> 60831434034f00b05c878fd7b366dd35c40fa4f3
                     <p class="my-2">अपनी डिजिटल आईडी डाउनलोड करें:</p>
                     {% for p in profile %}
                     <a href="{% url 'profile' p.unique_id %}">
