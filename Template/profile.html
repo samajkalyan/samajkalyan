@@ -17,6 +17,13 @@
             }
         }
 
+
+        @media print {
+            #btn-print {
+                display: none;
+            }
+        }
+
         @media screen and (min-width:900px) {
             .profile-details {
                 top: 64% !important;
@@ -48,8 +55,7 @@
                     <?xml version="1.0" encoding="UTF-8"?>
                     <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
                     <!-- Creator: CorelDRAW -->
-                    <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="100%"
-                        version="1.1"
+                    <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="100%" version="1.1"
                         style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
                         viewBox="0 0 5400 8600" xmlns:xlink="http://www.w3.org/1999/xlink"
                         xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
@@ -3930,7 +3936,8 @@ Er47AAAAAElFTkSuQmCC" />
                         font-weight: bold;line-height: 60px;
                         color: navy;">{{ p.salutation }}
                             {{ p.first_name }} {{ p.middle_name }} {{ p.last_name }}</p>
-                        <p class="mb-2 mb-lg-0 type" style="font-size: 30px;color: rgb(9, 9, 200);">{{ p.Type_of_members }}</p>
+                        <p class="mb-2 mb-lg-0 type" style="font-size: 30px;color: rgb(9, 9, 200);">{{ p.Type_of_members
+                            }}</p>
                         <p class="mb-0 uniqueid"
                             style="font-size: 20px;line-height: 55px;font-weight: 700;color: #4f4c4c;"><span
                                 id="formattedDate">{{ p.date }}</span>{{ p.serial_no| stringformat:"04d" }}</p>
