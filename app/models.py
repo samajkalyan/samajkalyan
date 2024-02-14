@@ -21,3 +21,4 @@ class FormData(models.Model):
     aadhar_no = models.CharField(max_length=30)
     Type_of_members = models.CharField(max_length=100,null=True)
     date = models.DateField(null=True,auto_now_add=True)
+

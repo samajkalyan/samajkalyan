@@ -9,3 +9,4 @@ from import_export.admin import ImportExportModelAdmin
 @admin.register(FormData)
 class ViewAdmin(ImportExportModelAdmin):
     pass
+
