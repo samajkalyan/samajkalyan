@@ -3952,7 +3952,9 @@ Er47AAAAAElFTkSuQmCC" />
                     width: 100%;">
                         <p class="mb-0 uniqueid"
                             style="font-size: 12px;font-weight: 600;color: #323131;text-transform: uppercase;">
-                            This card is issued on {{ p.date|date:"d-m-Y" }} and valid till [to 3 years]
+                            {% with expiry_year=p.date|date:"Y"|add:"3" %}
+                            THIS CARD IS ISSUED ON {{ p.date|date:"d-m-Y" }} AND VALID TILL {{ p.date|date:"d-m-" }}{{ expiry_year }}.
+                        {% endwith %}
                         </p>
 
                     </div>
